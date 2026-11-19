@@ -67,7 +67,8 @@ jobs:
           cp build/LANCommander.Interposer.Plugin.LegendsOfMightAndMagic.dll out/interposer/.interposer/Plugins/
           for d in dinput asi interposer; do
             cp LICENSE out/$d/lommpatch/LICENSE.txt
-            cp README.md out/$d/lommpatch/README.md            cp third_party/LANCommander.Interposer/LICENSE out/$d/lommpatch/LANCommander.Interposer-LICENSE.txt
+            cp README.md out/$d/lommpatch/README.md
+            cp third_party/LANCommander.Interposer/LICENSE out/$d/lommpatch/LANCommander.Interposer-LICENSE.txt
           done
           (cd out/dinput && 7z a -tzip -bso0 "../lommpatch-$VERSION-dinput.zip" .)
           (cd out/asi && 7z a -tzip -bso0 "../lommpatch-$VERSION-asi.zip" .)
